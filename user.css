@@ -1,0 +1,382 @@
+:root {
+  ---border-color: #404040;
+  ---background-color: #0b0b0b;
+  ---secondary-color: #262626;
+}
+
+.quick-input-widget {
+  position: absolute;
+  top: 30% !important;
+  left: 50% !important;
+  margin-left: 0px !important;
+  transform: translate(-50%, 0%);
+}
+
+.quick-input-widget::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* backdrop-filter: blur(4px); */
+  z-index: -1;
+  pointer-events: none;
+}
+
+.quick-input-inline-action-bar {
+  display: none !important;
+}
+
+.quick-input-widget
+  .quick-input-and-message
+  .quick-input-box
+  .monaco-inputbox
+  input {
+  padding: 8px 12px !important;
+}
+
+.quick-input-widget .quick-input-and-message .quick-input-box .monaco-inputbox {
+  border-radius: 4px !important;
+}
+
+.monaco-workbench {
+  --vscode-tab-border: var(---border-color) !important;
+  --vscode-panel-border: var(---border-color) !important;
+  --vscode-panelInput-border: var(---border-color) !important;
+  --vscode-panelSection-border: var(---border-color) !important;
+  --vscode-statusBar-border: var(---border-color) !important;
+  --vscode-activityBar-border: var(---border-color) !important;
+  --vscode-sideBar-border: var(---border-color) !important;
+  --vscode-sideBarSectionHeader-border: var(---border-color) !important;
+  --vscode-sideBarActivityBarTop-border: var(---border-color) !important;
+  --vscode-titleBar-border: var(---border-color) !important;
+  --vscode-notifications-border: var(---border-color) !important;
+  --vscode-terminal-border: var(---border-color) !important;
+  --vscode-multiDiffEditor-border: var(---border-color) !important;
+
+  --vscode-editor-background: var(---background-color) !important;
+  --vscode-editorStickyScroll-background: var(---background-color) !important;
+  --vscode-breadcrumb-background: var(---background-color) !important;
+  --vscode-editorGutter-background: var(---background-color) !important;
+  --vscode-tab-activeBackground: var(---background-color) !important;
+  --vscode-tab-inactiveBackground: var(---secondary-color) !important;
+  --vscode-sideBar-background: var(---background-color) !important;
+  --vscode-sideBarStickyScroll-background: var(---background-color) !important;
+  --vscode-sideBarSectionHeader-background: var(---background-color) !important;
+  --vscode-list-inactiveSelectionBackground: var(
+    ---background-color
+  ) !important;
+  --vscode-panel-background: var(---background-color) !important;
+  --vscode-peekViewResult-background: var(---background-color) !important;
+  --vscode-peekViewEditor-background: var(---background-color) !important;
+  --vscode-peekViewEditorGutter-background: var(---background-color) !important;
+}
+
+.editor-container {
+  background-color: var(---background-color) !important;
+}
+
+.titlebar {
+  border-bottom-color: var(---border-color) !important;
+  background-color: var(---secondary-color) !important;
+}
+
+.sidebar {
+  border-right-color: var(---border-color) !important;
+  background-color: var(---background-color) !important;
+}
+
+.sidebar > .title {
+  background-color: var(---background-color) !important;
+}
+
+.sidebar > .composite.header {
+  background-color: var(---secondary-color) !important;
+  padding: 0px !important;
+  border-bottom: none !important;
+}
+
+/* .sidebar > .title > .title-label {
+  display: none !important;
+} */
+
+.sidebar
+  > .title
+  > .title-actions
+  .actions-container
+  > .action-item.menu-entry {
+  display: none !important;
+}
+
+.sidebar
+  > .composite.header
+  .composite-bar
+  .monaco-action-bar
+  .actions-container
+  > .action-item.checked {
+  background-color: var(---background-color) !important;
+}
+
+.sidebar
+  > .composite.header
+  .composite-bar
+  .monaco-action-bar
+  .actions-container
+  > .action-item
+  .active-item-indicator {
+  display: none !important;
+}
+
+.statusbar {
+  --status-border-top-color: var(---border-color) !important;
+  background-color: var(---background-color) !important;
+}
+
+.basepanel {
+  background-color: var(---background-color) !important;
+}
+
+.basepanel .title {
+  background-color: var(---secondary-color) !important;
+  padding: 0px !important;
+}
+
+.basepanel .title .actions-container > .action-item.checked {
+  background-color: var(---background-color) !important;
+}
+
+.basepanel
+  .title
+  .actions-container
+  > .action-item.checked
+  .active-item-indicator {
+  display: none !important;
+}
+
+.tabs-and-actions-container {
+  /* --tabs-border-bottom-color: var(---border-color) !important; */
+  --tabs-border-bottom-color: transparent !important;
+  background-color: var(---secondary-color) !important;
+}
+
+.tab {
+  /* border-right-color: var(---border-color) !important; */
+  border-right: none !important;
+  --tab-border-top-color: #ffffff !important;
+  --tab-border-bottom-color: transparent !important;
+}
+
+.tab-border-top-container {
+  height: 2px !important;
+}
+
+.tab-actions .action-item .codicon-close {
+  color: #737174 !important;
+}
+
+.tabs .tab a.label-name {
+  color: #ffffff !important;
+}
+
+.tabs .tab .file-icon::before {
+  margin-top: 1px;
+}
+
+.composite {
+  border-top-color: var(---border-color) !important;
+}
+
+.codicon-breadcrumb-separator:before {
+  content: "/";
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 0.5em;
+  vertical-align: middle;
+  margin-top: -10px;
+}
+
+.current-line {
+  border: none !important;
+  background-color: #ffffff12 !important;
+}
+
+.core-guide-indent.lvl-0 {
+  display: none;
+}
+
+.view-overlays > div > svg > circle {
+  fill: #ffffff12 !important;
+}
+
+.monaco-action-bar
+  .action-item:has(> .action-label.codicon-explorer-view-icon) {
+  width: 70px;
+}
+
+.monaco-action-bar
+  .action-item
+  > .action-label.codicon-explorer-view-icon::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22lucide%20lucide-folder%22%3E%3Cpath%20d%3D%22M20%2020a2%202%200%200%200%202-2V8a2%202%200%200%200-2-2h-7.9a2%202%200%200%201-1.69-.9L9.6%203.9A2%202%200%200%200%207.93%203H4a2%202%200%200%200-2%202v13a2%202%200%200%200%202%202Z%22%2F%3E%3C%2Fsvg%3E");
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+}
+
+.monaco-action-bar
+  .action-item
+  > .action-label.codicon-explorer-view-icon::after {
+  content: "Files";
+  font: 14px/1 -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #ffffff;
+  margin-left: 4px;
+}
+
+.monaco-action-bar
+  .action-item:has(> .action-label.codicon-source-control-view-icon) {
+  width: 54px;
+}
+
+.monaco-action-bar
+  .action-item
+  > .action-label.codicon-source-control-view-icon::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22lucide%20lucide-git-fork%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2218%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%226%22%20cy%3D%226%22%20r%3D%223%22%2F%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%226%22%20r%3D%223%22%2F%3E%3Cpath%20d%3D%22M18%209v2c0%20.6-.4%201-1%201H7c-.6%200-1-.4-1-1V9%22%2F%3E%3Cpath%20d%3D%22M12%2012v3%22%2F%3E%3C%2Fsvg%3E");
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+}
+
+.monaco-action-bar
+  .action-item
+  > .action-label.codicon-source-control-view-icon::after {
+  content: "Git";
+  font: 14px/1 -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #ffffff;
+  margin-left: 8px;
+}
+
+.monaco-action-bar
+  .action-item:has(> .action-label.codicon-source-control-view-icon)
+  > .badge
+  > .badge-content {
+  bottom: 0px !important;
+  top: unset !important;
+}
+
+.monaco-action-bar .action-item:has(> .action-label.codicon-search-view-icon) {
+  width: 84px;
+}
+
+.monaco-action-bar
+  .action-item
+  > .action-label.codicon-search-view-icon::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22lucide%20lucide-search%22%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%228%22%2F%3E%3Cpath%20d%3D%22m21%2021-4.3-4.3%22%2F%3E%3C%2Fsvg%3E");
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+}
+
+.monaco-action-bar
+  .action-item
+  > .action-label.codicon-search-view-icon::after {
+  content: "Search";
+  font: 14px/1 -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #ffffff;
+  margin-left: -4px;
+}
+
+.monaco-workbench
+  .pane-composite-part
+  > .header-or-footer
+  > .composite-bar-container
+  > .composite-bar
+  > .monaco-action-bar
+  .action-item.icon,
+.monaco-workbench
+  .pane-composite-part
+  > .title
+  > .composite-bar-container
+  > .composite-bar
+  > .monaco-action-bar
+  .action-item.icon {
+  padding: 0 6px !important;
+}
+
+.monaco-workbench
+  .part.sidebar
+  > .header-or-footer
+  > .composite-bar-container
+  > .composite-bar
+  > .monaco-action-bar
+  .action-item
+  .action-label:before,
+.monaco-workbench
+  .part.sidebar
+  > .title
+  > .composite-bar-container
+  > .composite-bar
+  > .monaco-action-bar
+  .action-item
+  .action-label:before {
+  left: 8px !important;
+}
+
+/* Bottom breadcrumbs */
+
+.breadcrumbs-control {
+  height: 26px !important;
+}
+
+.monaco-breadcrumbs {
+  height: 26px !important;
+}
+
+.breadcrumbs-below-tabs {
+  position: absolute !important;
+  left: 0px !important;
+  bottom: 0px !important;
+}
+
+.tabs {
+  height: 100% !important;
+  background-color: transparent !important;
+}
+
+.editor-container {
+  position: absolute !important;
+  left: 0px !important;
+  width: 100% !important;
+}
+
+.editor-container:not(:has(> .editor-instance > .monaco-editor)) {
+  bottom: 0px !important;
+}
+
+.editor-container:has(> .editor-instance > .monaco-editor) {
+  bottom: 26px !important;
+}
+
+.peekview-widget > .head {
+  background-color: var(---background-color) !important;
+}
+
+.integrated-terminal .tabs-container {
+  border: none !important;
+}
+
+.integrated-terminal
+  .split-view-container
+  > .split-view-view:has(> .tabs-container) {
+  background-color: var(---secondary-color) !important;
+}
+
+.terminal-tabs-entry.is-active::before {
+  display: none !important;
+}
+
