@@ -237,6 +237,14 @@
 }
 
 .monaco-action-bar
+  .action-item:has(> .action-label.codicon-explorer-view-icon)
+  > .badge
+  > .badge-content {
+  bottom: 0px !important;
+  top: unset !important;
+}
+
+.monaco-action-bar
   .action-item:has(> .action-label.codicon-source-control-view-icon) {
   width: 54px;
 }
@@ -354,11 +362,13 @@
   width: 100% !important;
 }
 
-.editor-container:not(:has(> .editor-instance > .monaco-editor)) {
+.editor-container:not(:has(> .editor-instance > .monaco-editor[data-uri^="file://"]))
+{
   bottom: 0px !important;
 }
 
-.editor-container:has(> .editor-instance > .monaco-editor) {
+.editor-container:has(> .editor-instance > .monaco-editor[data-uri^="file://"])
+{
   bottom: 26px !important;
 }
 
