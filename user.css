@@ -2,6 +2,7 @@
   ---border-color: #404040;
   ---background-color: #0b0b0b;
   ---secondary-color: #262626;
+  ---vscode-logo-svg: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20width%3D%22290%22%20height%3D%22290%22%20viewBox%3D%220%200%2032%2032%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M20.375%2C3.291a.874.874%2C0%2C0%2C1%2C1.463.647V10.25l-8.36%2C6.624L9.172%2C13.608Z%22%20style%3D%22fill%3A%23ffffff%22%2F%3E%3Cpath%20d%3D%22M6.013%2C16.669%2C2.38%2C19.8A1.166%2C1.166%2C0%2C0%2C0%2C2.3%2C21.447c.025.027.05.053.077.077l1.541%2C1.4a1.166%2C1.166%2C0%2C0%2C0%2C1.489.066L9.6%2C19.935Z%22%20style%3D%22fill%3A%23ffffff%22%2F%3E%3Cpath%20d%3D%22M21.838%2C21.749%2C5.412%2C9.007a1.165%2C1.165%2C0%2C0%2C0-1.489.066l-1.541%2C1.4a1.166%2C1.166%2C0%2C0%2C0-.077%2C1.647c.025.027.05.053.077.077l17.99%2C16.5a.875.875%2C0%2C0%2C0%2C1.466-.645Z%22%20style%3D%22fill%3A%23ffffff%22%2F%3E%3Cpath%20d%3D%22M23.244%2C29.747a1.745%2C1.745%2C0%2C0%2C1-1.989-.338A1.025%2C1.025%2C0%2C0%2C0%2C23%2C28.684V3.316a1.025%2C1.025%2C0%2C0%2C0-1.749-.725%2C1.745%2C1.745%2C0%2C0%2C1%2C1.989-.338l5.765%2C2.772A1.748%2C1.748%2C0%2C0%2C1%2C30%2C6.6V25.4a1.748%2C1.748%2C0%2C0%2C1-.991%2C1.576Z%22%20style%3D%22fill%3A%23ffffff%22%2F%3E%3C%2Fsvg%3E");
 }
 
 .monaco-workbench {
@@ -35,6 +36,7 @@
   --vscode-peekViewResult-background: var(---background-color) !important;
   --vscode-peekViewEditor-background: var(---background-color) !important;
   --vscode-peekViewEditorGutter-background: var(---background-color) !important;
+  --vscode-panelSectionHeader-background: var(---background-color) !important;
 }
 
 .quick-input-widget {
@@ -164,17 +166,17 @@
   background-color: var(---background-color) !important;
 }
 
-.basepanel .title {
+.basepanel > .title {
   background-color: var(---secondary-color) !important;
   padding: 0px !important;
 }
 
-.basepanel .title .actions-container > .action-item.checked {
+.basepanel > .title .actions-container > .action-item.checked {
   background-color: var(---background-color) !important;
 }
 
 .basepanel
-  .title
+  > .title
   .actions-container
   > .action-item.checked
   .active-item-indicator {
@@ -420,5 +422,21 @@
 
 .monaco-tl-contents:has(> .explorer-item.monaco-icon-label.file-icon) {
   margin-left: -20px !important;
+}
+
+.monaco-list-row.selected {
+  background-color: #ffffff12 !important;
+}
+
+.editor .content.empty {
+  background-color: var(---background-color) !important;
+}
+
+.letterpress {
+  background-image: none !important;
+  mask: var(---vscode-logo-svg) no-repeat center;
+  mask-size: cover;
+  background-color: var(---secondary-color) !important;
+  margin-bottom: 12px;
 }
 
