@@ -1,0 +1,183 @@
+{
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "workbench.productIconTheme": "fluent-icons",
+  "explorer.confirmDelete": false,
+  "files.autoSave": "afterDelay",
+  "editor.fontFamily": "'JetBrains Mono', 'Cascadia Code', 'New York'",
+  "editor.lineHeight": 1.6,
+  "editor.fontWeight": "300",
+  "editor.fontLigatures": true,
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', 'Monaco', monospace",
+  "redhat.telemetry.enabled": false,
+  "editor.formatOnSave": true,
+  "git.openRepositoryInParentFolders": "never",
+  "extensions.ignoreRecommendations": true,
+  "editor.dragAndDrop": false,
+  "githubPullRequests.createOnPublishBranch": "never",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "remote.SSH.useLocalServer": false,
+  "tabout.charactersToTabOutFrom": [
+    {
+      "open": "[",
+      "close": "]"
+    },
+    {
+      "open": "{",
+      "close": "}"
+    },
+    {
+      "open": "(",
+      "close": ")"
+    },
+    {
+      "open": "'",
+      "close": "'"
+    },
+    {
+      "open": "\"",
+      "close": "\""
+    },
+    {
+      "open": ":",
+      "close": ":"
+    },
+    {
+      "open": "=",
+      "close": "="
+    },
+    {
+      "open": ">",
+      "close": ">"
+    },
+    {
+      "open": "<",
+      "close": "<"
+    },
+    {
+      "open": ".",
+      "close": "."
+    },
+    {
+      "open": "`",
+      "close": "`"
+    },
+    {
+      "open": ";",
+      "close": ";"
+    },
+    {
+      "open": ",",
+      "close": ","
+    }
+  ],
+  "workbench.startupEditor": "none",
+  "[svelte]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.confirmSync": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.stickyScroll.enabled": false,
+  "git.enableSmartCommit": true,
+  "workspaceSidebar.folder": "~/projects",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "tailwind-fold.showTailwindImage": false,
+  "tailwind-fold.foldedText": "class",
+  "tailwind-fold.foldedTextColor": "#20a0da",
+  "tailwind-fold.foldLengthThreshold": 1,
+  "editor.accessibilitySupport": "off",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "remote.autoForwardPorts": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.compactFolders": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "python.analysis.nodeExecutable": "/opt/homebrew/bin/node",
+  "dartImport.fixOnSave": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+  "prisma.showPrismaDataPlatformNotification": false,
+  "ReactNativeIDE.panelLocation": "tab",
+  "C_Cpp.default.includePath": [
+    "include",
+    "/usr/local/include"
+  ],
+  "oxc_language_server.enable": true,
+  "editor.minimap.size": "fit",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "tabnine.experimentalAutoImports": true,
+  "workbench.activityBar.location": "top",
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "all",
+  "git.defaultBranchName": "master",
+  "githubPullRequests.pullBranch": "never",
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.visual": "block",
+  "vim.cursorStylePerMode.visualblock": "block",
+  "vim.cursorStylePerMode.visualline": "block",
+  "vscode_custom_css.imports": [
+    "user.css"
+  ],
+  "workbench.colorCustomizations": {
+    "terminal.background": "#00000000"
+  },
+  "workbench.settings.applyToAllProfiles": [
+    "workbench.colorCustomizations"
+  ],
+  "workbench.editor.editorActionsLocation": "hidden",
+  "window.confirmBeforeClose": "keyboardOnly",
+  "window.zoomPerWindow": false,
+  "breadcrumbs.symbolPath": "off",
+  "breadcrumbs.icons": false,
+  "window.zoomLevel": 1,
+  "editor.mouseWheelZoom": true,
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.fontWeight": "400",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.theme": "none",
+  "workbench.tree.indent": 20,
+  "workbench.list.horizontalScrolling": true,
+  "debug.showInStatusBar": "never",
+  "vscode_custom_css.statusbar": false,
+  "errorLens.statusBarIconsEnabled": true
+}
